@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">dms</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="no_internet">No internet, check your connection!</string>
+
+    <string name="blank_email">Please enter email!</string>
+    <string name="blank_pass">Please enter password!</string>
+    <string name="blank_new_pass">Please enter new password!</string>
+    <string name="confirm_pass_invalidate">Confirm password is invalidate!</string>
+    <string name="blank_content">Please enter content!</string>
+    <string name="blank_barcode">Please enter barcode!</string>
+    <string name="blank_name">Please enter name!</string>
+    <string name="blank_unit_no">Please enter unit number!</string>
+    <string name="blank_company">Please enter company!</string>
+    <string name="blank_work_permit">Please enter work permit!</string>
+    <string name="blank_passport">Please enter passport!</string>
+    <string name="blank_log_change">Please enter log change!</string>
+    <string name="choose_dormitory">Please choose dormitory!</string>
+    <string name="choose_block">Please choose block!</string>
+    <string name="choose_level">Please choose level!</string>
+    <string name="choose_room">Please choose room!</string>
+    <string name="choose_category">Please choose category!</string>
+    <string name="choose_nationality">Please choose nationality!</string>
+    <string name="choose_expiry">Please choose expiry date!</string>
+    <string name="choose_sex">Please choose sex!</string>
+    <string name="choose_img1">Please choose worker image 1!</string>
+    <string name="choose_img2">Please choose worker image 2!</string>
+    <string name="choose_img3">Please choose worker image 3!</string>
+    <string name="choose_img_visitor_1">Please choose visitor image 1!</string>
+    <string name="choose_img_visitor_2">Please choose visitor image 2!</string>
+    <string name="choose_visitor_type">Please choose visitor type!</string>
+    <string name="choose_shift_staff">Please choose staff!</string>
+</resources>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:minWidth="5000dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtUsername"
+            style="@style/edt_signin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_marginTop="@dimen/dm_30dp"
+            android:hint="Email"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/edt_signin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:hint="Password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword" />
+
+        <RelativeLayout
+            android:id="@+id/rltSignin"
+            style="@style/btn_signin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:layout_marginBottom="@dimen/dm_30dp"
+            android:layout_marginTop="@dimen/dm_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SIGN IN"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

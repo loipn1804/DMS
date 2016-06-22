@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:gravity="bottom"
+        android:minHeight="5000dp"
+        android:minWidth="5000dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnlBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtDashboard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="FILTER"
+                android:textColor="@color/txt_black_33"
+                android:textSize="@dimen/txt_22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/lnlAll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:background="@color/main_color"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_20dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dm_10dp"
+                    android:src="@drawable/filter_check" />
+
+                <TextView
+                    android:id="@+id/txtAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="ALL"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlLive"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_20dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dm_10dp"
+                    android:src="@drawable/filter_check" />
+
+                <TextView
+                    android:id="@+id/txtLive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="LIVE"
+                    android:textColor="@color/txt_black_33"
+                    android:textSize="@dimen/txt_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlProgress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_20dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dm_10dp"
+                    android:src="@drawable/filter_check" />
+
+                <TextView
+                    android:id="@+id/txtProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="IN PROGRESS"
+                    android:textColor="@color/txt_black_33"
+                    android:textSize="@dimen/txt_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlApproval"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_20dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dm_10dp"
+                    android:src="@drawable/filter_check" />
+
+                <TextView
+                    android:id="@+id/txtApproval"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="WAIT FOR APPROVAL"
+                    android:textColor="@color/txt_black_33"
+                    android:textSize="@dimen/txt_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnlClosed"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_40dp"
+                android:background="@drawable/btn_white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dm_40dp"
+                    android:layout_height="@dimen/dm_40dp"
+                    android:layout_marginLeft="@dimen/dm_20dp"
+                    android:layout_marginRight="@dimen/dm_20dp"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/dm_10dp"
+                    android:src="@drawable/filter_check" />
+
+                <TextView
+                    android:id="@+id/txtClosed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center_vertical"
+                    android:text="CLOSED"
+                    android:textColor="@color/txt_black_33"
+                    android:textSize="@dimen/txt_18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_white_30">#4dffffff</color>
+    <color name="black_trans_50">#80000000</color>
+    <color name="black_trans_30">#4d000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="white_press">#f4f4f4</color>
+    <color name="red">#ff0000</color>
+
+    <color name="main_color">#de1f00</color>
+    <color name="main_color_press">#80de1f00</color>
+    <color name="stroke_gray">#e1e1e1</color>
+    <color name="bg_image_case_detail">#ebebeb</color>
+    <color name="add_image_case_detail">#00a3d5</color>
+    <color name="dashboard_dormitory_bg">#242424</color>
+    <color name="dashboard_user_bg">#dd1d00</color>
+    <color name="dashboard_case_bg">#eeaa11</color>
+    <color name="case_live_bg">#73ce31</color>
+    <color name="case_progress_bg">#2478c0</color>
+    <color name="case_approval_bg">#ffb600</color>
+    <color name="case_closed_bg">#555555</color>
+    <color name="status_on">#73ce31</color>
+    <color name="divider">#dcdcdc</color>
+    <color name="divider_2">#ececec</color>
+    <color name="notification_on">#de1f00</color>
+    <color name="notification_off">#b7b7b7</color>
+    <color name="diary_bg">#eaeaea</color>
+    <color name="diary_divider">#b7b7b7</color>
+    <color name="gray_bg_menu">#cccccc</color>
+    <color name="bg_tab_trip">#e1e1e1</color>
+
+    <color name="txt_black_55">#555555</color>
+    <color name="txt_black_55_hint">#e1e1e1</color>
+    <color name="txt_black_33">#333333</color>
+    <color name="txt_black_96">#969696</color>
+    <color name="txt_black">#000000</color>
+    <color name="txt_label">#acacac</color>
+    <color name="txt_time_notification">#8e8f8f</color>
+</resources>

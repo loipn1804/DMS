@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/height_profile_menu"
+                android:layout_height="@dimen/height_profile_menu"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/actionbar_height"
+                android:src="@drawable/icon_512" />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                style="@style/edt_signin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_marginTop="@dimen/dm_30dp"
+                android:hint="Email"
+                android:imeOptions="actionNext" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                style="@style/edt_signin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+            <RelativeLayout
+                android:id="@+id/rltSignin"
+                style="@style/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_marginTop="@dimen/dm_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SIGN IN"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_18sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtForgetPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dm_20dp"
+                android:layout_marginTop="@dimen/dm_20dp"
+                android:padding="@dimen/dm_5dp"
+                android:text="Forget Password?"
+                android:textColor="@color/main_color"
+                android:textSize="@dimen/txt_18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

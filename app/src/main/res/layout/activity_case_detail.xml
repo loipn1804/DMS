@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rltActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rltBack"
+            android:layout_width="@dimen/actionbar_height"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_white"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imvMenuLeft"
+                android:layout_width="@dimen/ac_imv_size"
+                android:layout_height="@dimen/ac_imv_size"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_left" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtNameActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Case Detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_title" />
+
+        <TextView
+            android:id="@+id/txtSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_white"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dm_10dp"
+            android:paddingRight="@dimen/dm_10dp"
+            android:text="Save"
+            android:textColor="@color/txt_black_33"
+            android:textSize="@dimen/txt_title" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dm_1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="DORMITORY" />
+
+                <RelativeLayout
+                    android:id="@+id/rltDormitory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txtDormitory"
+                        style="@style/txt_case_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imvDormitory" />
+
+                    <ImageView
+                        android:id="@+id/imvDormitory"
+                        android:layout_width="@dimen/ac_imv_size"
+                        android:layout_height="@dimen/ac_imv_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:padding="@dimen/dm_2dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="BLOCK" />
+
+                <RelativeLayout
+                    android:id="@+id/rltBlock"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txtBlock"
+                        style="@style/txt_case_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imvBlock" />
+
+                    <ImageView
+                        android:id="@+id/imvBlock"
+                        android:layout_width="@dimen/ac_imv_size"
+                        android:layout_height="@dimen/ac_imv_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:padding="@dimen/dm_2dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="CATEGORY" />
+
+                <RelativeLayout
+                    android:id="@+id/rltCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txtCategory"
+                        style="@style/txt_case_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imvCategory" />
+
+                    <ImageView
+                        android:id="@+id/imvCategory"
+                        android:layout_width="@dimen/ac_imv_size"
+                        android:layout_height="@dimen/ac_imv_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:padding="@dimen/dm_2dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dm_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnlSubCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <LinearLayout
+                android:id="@+id/lnlCaseNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="CASE NO." />
+
+                <TextView
+                    android:id="@+id/txtCaseNo"
+                    style="@style/txt_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineCaseNo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <LinearLayout
+                android:id="@+id/lnlStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="STATUS" />
+
+                <RelativeLayout
+                    android:id="@+id/rltStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <View
+                        android:id="@+id/imvStatus"
+                        android:layout_width="@dimen/ac_imv_size"
+                        android:layout_height="@dimen/ac_imv_size"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:background="@drawable/circle_status_live"
+                        android:src="@drawable/arrow_down" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        style="@style/txt_case_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imvStatusArrow"
+                        android:layout_toRightOf="@+id/imvStatus"
+                        android:text="New" />
+
+                    <ImageView
+                        android:id="@+id/imvStatusArrow"
+                        android:layout_width="@dimen/ac_imv_size"
+                        android:layout_height="@dimen/ac_imv_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:padding="@dimen/dm_2dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineStatus"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <LinearLayout
+                android:id="@+id/lnlCreatedBy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="CREATED BY" />
+
+                <TextView
+                    android:id="@+id/txtCreatedBy"
+                    style="@style/txt_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineCreatedBy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <LinearLayout
+                android:id="@+id/lnlAssignTo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="ASSIGN TO" />
+
+                <RelativeLayout
+                    android:id="@+id/rltAssignTo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/txtAssignTo"
+                        style="@style/txt_case_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/imvAssignTo" />
+
+                    <ImageView
+                        android:id="@+id/imvAssignTo"
+                        android:layout_width="@dimen/ac_imv_size"
+                        android:layout_height="@dimen/ac_imv_size"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dm_10dp"
+                        android:layout_marginRight="@dimen/dm_10dp"
+                        android:padding="@dimen/dm_2dp"
+                        android:src="@drawable/arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineAssignTo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/txt_label_case_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="CONTENT" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|left"
+                android:minLines="3"
+                android:padding="@dimen/dm_10dp"
+                android:textColor="@color/txt_black_33"
+                android:textSize="@dimen/txt_15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dm_1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_2" />
+
+            <HorizontalScrollView
+                android:id="@+id/crollViewImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dm_10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/lnlImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dm_10dp">
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

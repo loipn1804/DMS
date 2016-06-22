@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dm_10dp"
+        android:paddingRight="@dimen/dm_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/dm_100dp"
+                android:layout_height="@dimen/dm_100dp"
+                android:padding="@dimen/dm_10dp"
+                android:src="@drawable/avatar_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="@dimen/dm_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="Loi Phan"
+                    android:textColor="@color/txt_black_33"
+                    android:textSize="@dimen/txt_15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="fdf dsf dfd fdjvkvcf sdf d fds fd fd fds fds fds fd sf sdf sdf s"
+                    android:textColor="@color/txt_black_55"
+                    android:textSize="@dimen/txt_15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dm_20dp"
+                        android:layout_height="@dimen/dm_20dp"
+                        android:padding="@dimen/dm_3dp"
+                        android:src="@drawable/clock" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="09:20"
+                        android:textColor="@color/txt_time_notification"
+                        android:textSize="@dimen/txt_12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dm_10dp"
+            android:layout_height="@dimen/dm_10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dm_10dp"
+            android:layout_marginTop="@dimen/dm_10dp"
+            android:background="@drawable/circle_red" />
+    </RelativeLayout>
+</LinearLayout>
